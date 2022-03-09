@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Modelo - App de Apresentação</title>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#" onclick="mostraPagina('#home')">Empresa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#sobre')"
+              data-toggle="collapse" data-target="#menuNavbar">Sobre a empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#servicos')"
+              data-toggle="collapse" data-target="#menuNavbar">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('#equipe')"
+                data-toggle="collapse" data-target="#menuNavbar">Equipe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('#contato')"
+                data-toggle="collapse" data-target="#menuNavbar">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container w-100 h-100 p-0">
+
+        <section id="home" class="p-5 text-center h-100">
+          <img src="./img/BarbaraLogo.png" class="rounded-circle w-100 mt-5">
+        </section>        
+
+        <section id="sobre" class="sobre p-5 text-center collapse"> 
+          <h4>Barbara Silva </h4>
+          <h5> INTERIORES </h5><br/>
+            <h3>Visão Geral</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti soluta unde illo nesciunt aliquam eveniet sunt, quaerat quo iste sint? Doloribus corporis autem enim! 
+              Esse explicabo tempore cum maxime.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iure culpa, dolores, quisquam quasi recusandae debitis illum facilis exercitationem doloremque omnis reprehenderit nulla! 
+              Consequatur dolorem sapiente officiis totam iusto est?</p>
+
+              <h3 class="missao"> Missão</h3>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti soluta unde illo nesciunt aliquam eveniet sunt, quaerat quo iste sint? Doloribus corporis autem enim! 
+                Esse explicabo tempore cum maxime.</p>
+          
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iure culpa, dolores, quisquam quasi recusandae debitis illum facilis exercitationem doloremque omnis reprehenderit nulla! 
+                Consequatur dolorem sapiente officiis totam iusto est?</p>
+         </section>
+
+          <section id="servicos" class="equipe mt-3 p-5 collapse">
+            <div class="card">
+              <div class="card-header">
+                Área Comum
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Predio/Casa</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde eos vero velit magni, nemo ab provident distinctio aliquid quas sit quisquam beatae aliquam voluptatem sunt, 
+                  maxime, libero sint repellendus.</p>
+                  <a href="mailto:mcveighy@gmail.com" class="btn btn-primary">Orçamento</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                Espaço Gourmet
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Piscina</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde eos vero velit magni, nemo ab provident distinctio aliquid quas sit quisquam beatae aliquam voluptatem sunt, 
+                  maxime, libero sint repellendus.</p>
+                  <a href="mailto:mcveighy@gmail.com" class="btn btn-primary">Orçamento</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="equipe" class="equipe mt-3 p-5 text-center collapse">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/avatar1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Benjamim Franklim</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, beatae ad consequuntur ex vero sed modi quos odio quis temporibus repudiandae accusamus molestias vitae consectetur, 
+                                         sequi soluta. Dolores, eius magni!.</p>
+                    <p class="card-text"><small class="text-muted">Designer Chefe</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/avatar2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">João das Couves</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, beatae ad consequuntur ex vero sed modi quos odio quis temporibus repudiandae accusamus molestias vitae consectetur, 
+                                         sequi soluta. Dolores, eius magni!.</p>
+                    <p class="card-text"><small class="text-muted">Designer Mão na Massas</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="sobre p-5 text-center">
+            <img src="./img/BarbaraLogo.png" class="center-block rounded border w-75 mt-4">
+            <h3>Entre em contato conosco</h3>
+            <p>
+                <a href="mailto:mcveighy@gmail.com">
+                    <img class="w-25" src="./img/email.svg" />                
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5548998622317&text='Como Posso lhe ajudar ?'">
+                    <img class="w-25" src="./img/icons8-whatsapp.svg" />
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://www.instagram.com/mcveighy/">
+                    <img class="w-25" src="./img/icons8-instagram.svg" />
+                </a>
+            </p>
+            
+        </section>
+      </main>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
